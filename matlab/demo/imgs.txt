@@ -1,0 +1,2 @@
+/home/iis/adsc/caffe-cbd-udnn/1.jpg
+/home/iis/adsc/caffe-cbd-udnn/a2.jpg
