@@ -2,18 +2,18 @@
 
 Learning Compact Binary Descriptors with Unsupervised Deep Neural Networks
 
-Created by Kevin Lin, Jiwen Lu, and Chu-Song Chen at the Advanced Digital Science Center (Singapore) in the summer of 2015.
+Created by Kevin Lin, Jiwen Lu, and Chu-Song Chen at Advanced Digital Sciences Center (Singapore) in 2015 Summer.
 
 ## Introduction
 
-We propose a new unsupervised deep learning approach to learn compact binary descriptor. We enforce three criterions on binary codes which are learned at the top layer of our network: 1) minimal loss quantization, 2) evenly distributed codes and 3) uncorrelated bits. Then, we learn the parameters of the networks with a back-propagation technique. Experimental results on three different visual analysis tasks including image matching, image retrieval, and object recognition demonstrate the effectiveness of the proposed approach.
-
 This repo is the implementation for the paper "Learning Compact Binary Descriptors with Unsupervised Deep Neural Networks" (CVPR16). 
+
+We propose a new unsupervised deep learning approach to learn compact binary descriptor. We enforce three criterions on binary codes which are learned at the top layer of our network: 1) minimal loss quantization, 2) evenly distributed codes and 3) uncorrelated bits. Then, we learn the parameters of the networks with a back-propagation technique. Experimental results on three different visual analysis tasks including image matching, image retrieval, and object recognition demonstrate the effectiveness of the proposed approach.
 
 The paper preprint is available by [request](mailto:kevinlin311.tw@gmail.com)
 
 
-### Citation
+## Citation
 
 If you find `DeepBit` useful in your research, please consider citing:
 
@@ -60,7 +60,7 @@ For a faster build, compile in parallel by doing `make all -j8` where 8 is the n
 
 ## Retrieval evaluation on CIFAR10
 
-Frist, run the following command to download and set up `CIFAR10 Dataset`, `VGG16 pre-trained on ILSVRC12`, `DeepBit 32-bit model trained on CIFAR10`. This script will rotate training data and create leveldb files.
+First, run the following command to download and set up `CIFAR10 Dataset`, `VGG16 pre-trained on ILSVRC12`, `DeepBit 32-bit model trained on CIFAR10`. This script will rotate training data and create leveldb files.
 
     $ ./prepare.sh
 
@@ -78,7 +78,7 @@ Then, you will get the `mAP` result as follows.
 Note: CIFAR10 dataset is split into training and test sets, with 50,000 and 10,000 images, respectively. During retrieval process, the 50,000 training images are treated as the database. We use the 10,000 test images as the query samples.
 
 
-## Train Deepbit on CIFAR10
+## Train DeepBit on CIFAR10
 
 Simply run the following command to train DeepBit:
 
