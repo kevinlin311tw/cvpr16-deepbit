@@ -8,7 +8,7 @@ Created by Kevin Lin, Jiwen Lu, Chu-Song Chen, Jie Zhou
 
 We propose a new unsupervised deep learning approach to learn compact binary descriptor. We enforce three criterions on binary codes which are learned at the top layer of our network: 1) minimal loss quantization, 2) evenly distributed codes and 3) rotation invariant bits. Then, we learn the parameters of the networks with a back-propagation technique. Experimental results on three different visual analysis tasks including image matching, image retrieval, and object recognition demonstrate the effectiveness of the proposed approach.
 
-<img src="https://www.csie.ntu.edu.tw/~r01944012/cvpr16-overview.png" width="800">
+<img src="https://www.csie.ntu.edu.tw/~r01944012/cvpr16-overview.png" width="750">
 
 The details can be found in the following [CVPR 2016 paper](http://www.iis.sinica.edu.tw/~kevinlin311.tw/cvpr16-deepbit.pdf)
 
