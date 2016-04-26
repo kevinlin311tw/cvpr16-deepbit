@@ -2,20 +2,21 @@
 
 Learning Compact Binary Descriptors with Unsupervised Deep Neural Networks
 
-Created by Kevin Lin, Jiwen Lu, and Chu-Song Chen at Advanced Digital Sciences Center (Singapore) in 2015 Summer.
+Created by Kevin Lin, Jiwen Lu, Chu-Song Chen, Jie Zhou
 
 ## Introduction
 
-This repo is the implementation for the paper "Learning Compact Binary Descriptors with Unsupervised Deep Neural Networks" (CVPR16). 
+We propose a new unsupervised deep learning approach to learn compact binary descriptor. We enforce three criterions on binary codes which are learned at the top layer of our network: 1) minimal loss quantization, 2) evenly distributed codes and 3) rotation invariant bits. Then, we learn the parameters of the networks with a back-propagation technique. Experimental results on three different visual analysis tasks including image matching, image retrieval, and object recognition demonstrate the effectiveness of the proposed approach.
 
-We propose a new unsupervised deep learning approach to learn compact binary descriptor. We enforce three criterions on binary codes which are learned at the top layer of our network: 1) minimal loss quantization, 2) evenly distributed codes and 3) uncorrelated bits. Then, we learn the parameters of the networks with a back-propagation technique. Experimental results on three different visual analysis tasks including image matching, image retrieval, and object recognition demonstrate the effectiveness of the proposed approach.
+<img src="https://www.csie.ntu.edu.tw/~r01944012/deepbit-overview.png" width="800">
 
-The paper preprint is available by [request](mailto:kevinlin311.tw@gmail.com)
+The details can be found in the following [CVPR 2016 paper](http://www.iis.sinica.edu.tw/~kevinlin311.tw/cvpr16-deepbit.pdf)
 
+**This is a modified version of [Caffe](https://github.com/BVLC/caffe) which supports the proposed algorithm.**
 
 ## Citation
 
-If you find `DeepBit` useful in your research, please consider citing:
+If you find DeepBit useful in your research, please consider citing:
 
     Learning Compact Binary Descriptors with Unsupervised Deep Neural Networks
     Kevin Lin, Jiwen Lu, Chu-Song Chen and Jie Zhou
@@ -24,7 +25,7 @@ If you find `DeepBit` useful in your research, please consider citing:
 
 ## CIFAR10 retrieval results
 
-Performance comparison of different `unsupervised hashing algorithms` on CIFAR10 dataset. The table shows the mean average precision (mAP) of top 1000 returned images with respect to different number of hash bits. We provide better results here:
+Performance comparison of different unsupervised hashing algorithms on CIFAR10 dataset. The table shows the mean average precision (mAP) of top 1000 returned images with respect to different number of hash bits. We provide better results here:
 
 
      Method      |   16 bits   |   32 bits   |   64 bits
@@ -100,14 +101,6 @@ Launch matlab, run `run_cifar10.m` and test the model!
     >> run_cifar10
 
 
-## Experiments on Descriptor Matching
-
-comming soon...
-
-## Experiments on Object Recognition
-
-comming soon...
-
 
 ## Resources
 
@@ -118,7 +111,7 @@ If the automatic "fetch_data" fails, you may manually download the resouces from
 0. For `./prepare.sh`:
     - VGGNet pre-trained on ILSVC12: [MEGA](https://mega.nz/#!0IsmmKTS!vYrCmGODqCRoSGhbPwMkK4ohJzFNu3WblNijnsvTZD0), [Dropbox](https://www.dropbox.com/s/yqkm2tgqonditgs/VGG_ILSVRC_16_layers.caffemodel?dl=0)
 
-    - DeepBit 32bit model pre-trained on cifar10: [MEGA](https://mega.nz/#!kFd3RZbR!jhhlgfd-eOV4YpflBcZ3lE3UmeQqJFLuds1fLdIKS_0), [DropBox](https://www.dropbox.com/s/z815s0cjdipwr5b/DeepBit32_final_iter_1.caffemodel?dl=0)
+    - DeepBit 32bit model pre-trained on cifar10: [MEGA](https://mega.nz/#!kFd3RZbR!jhhlgfd-eOV4YpflBcZ3lE3UmeQqJFLuds1fLdIKS_0), [Dropbox](https://www.dropbox.com/s/z815s0cjdipwr5b/DeepBit32_final_iter_1.caffemodel?dl=0)
 
     - CIFAR10 dataset (jpg format): [MEGA](https://mega.nz/#!RENV1bhZ!x0uFnAkqUSTJzKr6HzeeNV9mtDjlgQ0x6ZaXfpxbJkw), [Dropbox](https://www.dropbox.com/s/f7q3bbgvat2q1u2/cifar10-dataset.zip?dl=0), [BaiduYun](http://pan.baidu.com/s/1pKsSK7h)
 
@@ -131,10 +124,12 @@ DeepBit models in the paper:
     - 64-bit model: [MEGA](https://mega.nz/#!pMFgQaJR!-kybfCeXDLvaD96NIRTzDZBMgET6x5SVBJ5H3HKQLrw), [Dropbox](https://www.dropbox.com/s/4nrhtsq7q2offx4/DeepBit64_final_iter_1.caffemodel?dl=0)
 
 
+## Experiments on Descriptor Matching and Object Recognition
+
+comming soon...
+
+
 ## Contact
 
 Please feel free to leave suggestions or comments to Kevin Lin (kevinlin311.tw@iis.sinica.edu.tw), Jiwen Lu (lujiwen@tsinghua.edu.cn) or Chu-Song Chen (song@iis.sinica.edu.tw)
 
-
-## Acknowledgements
-Thanks to Yangqing Jia and BVLC team for the wonderful open source Caffe.
