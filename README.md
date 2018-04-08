@@ -25,18 +25,18 @@ If you find DeepBit useful in your research, please consider citing:
 Performance comparison of different unsupervised hashing algorithms on CIFAR10 dataset. The table shows the mean average precision (mAP) of top 1000 returned images with respect to different number of hash bits. We provide better results here:
 
 
-     Method      |   16 bits   |   32 bits   |   64 bits
------------------|:-----------:|:-----------:|:-----------:
-      KMH        |    13.59    |    13.93    |    14.46
-      SphH       |    13.98    |    14.58    |    15.38
-      SpeH       |    12.55    |    12.42    |    12.56
-      SH         |    12.95    |    14.09    |    13.89
-      PCAH       |    12.91    |    12.60    |    12.10
-      LSH        |    12.55    |    13.76    |    15.07
-     PCA-ITQ     |    15.67    |    16.20    |    16.64
-    Deep Hash    |    16.17    |    16.62    |    16.96
- Ours (Nov.2015) |    19.43    |    24.86    |    27.73
- **Ours (Apr.2016)** |    **20.53**    |    **25.44**    |    **29.49**
+| Method              |  16 bits  |  32 bits  |  64 bits  |
+|---------------------|:---------:|:---------:|:---------:|
+| KMH                 |   13.59   |   13.93   |   14.46   |
+| SphH                |   13.98   |   14.58   |   15.38   |
+| SpeH                |   12.55   |   12.42   |   12.56   |
+| SH                  |   12.95   |   14.09   |   13.89   |
+| PCAH                |   12.91   |   12.60   |   12.10   |
+| LSH                 |   12.55   |   13.76   |   15.07   |
+| PCA-ITQ             |   15.67   |   16.20   |   16.64   |
+| Deep Hash           |   16.17   |   16.62   |   16.96   |
+| Ours (Nov.2015)     |   19.43   |   24.86   |   27.73   |
+| **Ours (Apr.2016)** | **20.53** | **25.44** | **29.49** |
 
 
 
